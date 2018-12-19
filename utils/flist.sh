@@ -201,3 +201,5 @@ sudo update-rc.d $OE_CONFIG defaults
  
 sudo service $OE_CONFIG start
 echo "Done! The ODOO server can be started with: service $OE_CONFIG start"
+
+tar -cpzf "/root/archives/odoo_8.tar.gz" --exclude dev --exclude sys --exclude proc  /
